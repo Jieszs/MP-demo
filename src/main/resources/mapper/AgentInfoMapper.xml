@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.AgentInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.demo.entity.AgentInfo">
+        <id column="agentId" property="agentId" />
+        <result column="agentName" property="agentName" />
+        <result column="username" property="username" />
+        <result column="phone" property="phone" />
+        <result column="email" property="email" />
+        <result column="orgId" property="orgId" />
+        <result column="sex" property="sex" />
+        <result column="agentNo" property="agentNo" />
+        <result column="insertTime" property="insertTime" />
+        <result column="state" property="state" />
+        <result column="avatar" property="avatar" />
+        <result column="roleId" property="roleId" />
+        <result column="agentRealName" property="agentRealName" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        agentId, agentName, username, phone, email, orgId, sex, agentNo, insertTime, state, avatar, roleId, agentRealName
+    </sql>
+
+</mapper>
